@@ -1,0 +1,160 @@
+/* Global Variables */
+html {
+  --bg-color: white;
+  --footer-bg: hsl(192, 38%, 95%);
+
+  --text-color: hsl(0, 0%, 25%);
+
+  --blue-color: hsl(195, 57%, 52%);
+}
+
+html.dark__mode {
+  --bg-color: black;
+  --footer-bg: hsl(240, 2%, 13%);
+
+  --text-color: hsl(0, 0%, 75%);
+}
+
+/* General */
+html {
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Nav */
+.nav {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-color);
+  min-height: 60px;
+  padding-inline: 10%;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.06);;
+}
+
+.nav__dark-mode {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+}
+
+.nav__link {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text-color);
+  margin-inline: 1.2rem;
+  transition: .2s;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: var(--blue-color);
+  outline: none;
+}
+
+/* Main */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  padding: 2rem 3rem;
+}
+
+.main__header {
+  font-size: 1.1rem;
+  line-height: 2.6rem;
+  padding: 1rem 0;
+}
+
+.main__greeting{
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.main__introduction {
+  color: var(--text-color);
+  margin: 0;
+}
+
+.main__header span {
+  color: var(--blue-color);
+}
+
+.main__image {
+  width: 470px;
+  height: 250px;
+  margin: 0 0 0 40px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--footer-bg);
+  min-height: 100px;
+}
+
+.footer__link {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  fill: var(--text-color);
+  width: 20px;
+  height: 20px;
+  padding: 1px 5px;
+  border-radius: 3px;
+  margin-inline: 7px;
+  transition: .2s
+}
+
+.footer__link:hover,
+.footer__link:focus {
+  fill: var(--blue-color);
+  outline: none;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1085px) {
+  .main {
+    padding: 5.5rem 3rem;
+  }
+
+  .main__header {
+    font-size: 0.8rem;
+    line-height: 1.9rem;
+  }
+
+  .main__image {
+    width: 380px;
+    height: 202px;
+  }
+}
+
+@media only screen and (max-width: 855px) {
+  .main {
+    flex-direction: column-reverse;
+  }
+
+  .main__header {
+    text-align: center;
+  }
+
+  .main__image {
+    margin: 0 0 50px 0;
+  }
+}

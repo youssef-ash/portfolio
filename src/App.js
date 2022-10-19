@@ -3,6 +3,8 @@ import Footer from './components/footer';
 import Home from './components/home';
 import About from './components/about';
 import { useState, useEffect } from 'react';
+import Projects from './components/projects';
+import Contact from './components/contact';
 
 export default function App() {
 
@@ -46,7 +48,8 @@ export default function App() {
       <Nav darkMode={dark} toggleDarkMode={toggleDarkMode} setViewing={setViewing} />
       {viewing === 'Home' && <Home />}
       {viewing === 'About' && <About />}
-      {/* {viewing === 'Contact' && <Contact />} */}
+      {viewing === 'Projects' && <Projects />}
+      {viewing === 'Contact' && <Contact />}
       <Footer />
     </div>
   );

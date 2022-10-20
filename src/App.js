@@ -1,17 +1,16 @@
-import Nav from './components/nav';
-import Footer from './components/footer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/home';
 import About from './components/about';
 import { useState, useEffect } from 'react';
 import Projects from './components/projects';
 import Contact from './components/contact';
+import Layout from './components/layout';
 
 export default function App() {
 
   /* State Declarations */
   const [firstLoaded, setFirstLoaded] = useState(false);
   const [dark, setDark] = useState(false);
-  const [viewing, setViewing] = useState('Home');
 
   /* Effects */
 
@@ -44,13 +43,15 @@ export default function App() {
   };
 
   return (
-    <div className={`app ${dark ? 'dark-mode' : ''} ${firstLoaded ? 'loaded' : ''}`}>
-      <Nav darkMode={dark} toggleDarkMode={toggleDarkMode} setViewing={setViewing} />
-      {viewing === 'Home' && <Home />}
-      {viewing === 'About' && <About />}
-      {viewing === 'Projects' && <Projects />}
-      {viewing === 'Contact' && <Contact />}
-      <Footer />
-    </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Layout darkMode={dark} toggleDarkMode={toggleDarkMode} firstLoaded={firstLoaded} />}>
+            <Route index element={<Home />} />
+            <Route path='about' element={<About />} />
+            <Route path='projects' element={<Projects />} />
+            <Route path='contact' element={<Contact />} />
+          </Route>
+        </Routes>
+    </BrowserRouter>
   );
 }

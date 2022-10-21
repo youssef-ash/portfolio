@@ -8,7 +8,11 @@ export default function Home() {
           An Aspiring Web Developer.
         </h1>
       </div>
-      <img className="home__image" src="images/web_dev_image.png" alt="programmer vector" />
+      <img
+        className="home__image"
+        src="images/web_dev.png"
+        alt="programmer vector"
+      />
     </main>
   );
 }

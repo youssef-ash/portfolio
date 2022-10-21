@@ -7,7 +7,6 @@ import Contact from './components/contact';
 import Layout from './components/layout';
 
 export default function App() {
-
   /* State Declarations */
   const [firstLoaded, setFirstLoaded] = useState(false);
   const [dark, setDark] = useState(false);
@@ -25,7 +24,7 @@ export default function App() {
   // applies transitions after start component is loaded to prevent light mode styling flashing before dark mode styling
   useEffect(() => {
     setTimeout(() => {
-      setFirstLoaded(true)
+      setFirstLoaded(true);
     }, 100);
   }, []);
 
@@ -40,18 +39,27 @@ export default function App() {
       setDark(true);
       localStorage.setItem('darkMode', 'enabled');
     }
-  };
+  }
 
   return (
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Layout darkMode={dark} toggleDarkMode={toggleDarkMode} firstLoaded={firstLoaded} />}>
-            <Route index element={<Home />} />
-            <Route path='about' element={<About />} />
-            <Route path='projects' element={<Projects />} />
-            <Route path='contact' element={<Contact />} />
-          </Route>
-        </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Layout
+              darkMode={dark}
+              toggleDarkMode={toggleDarkMode}
+              firstLoaded={firstLoaded}
+            />
+          }
+        >
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="contact" element={<Contact />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 }

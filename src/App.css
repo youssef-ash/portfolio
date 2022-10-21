@@ -201,6 +201,7 @@ span {
 .projects__button__container {
   display: flex;
   justify-content: center;
+  margin-top: 0.5rem;
 }
 
 .projects__button {

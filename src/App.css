@@ -9,7 +9,8 @@
   --button-bg-hover: hsl(0, 0%, 8%);
 
   --shadow: 0 1px 6px 0 hsl(0 0% 0% / 0.1), 0 1px 2px 0 hsl(0 0% 0% / 0.06);
-  --card-shadow: 1px 1px 6px 0 hsl(0 0% 0% / 0.1), 1px 1px 2px 0 hsl(0 0% 0% / 0.06), -1px -1px 6px 0 hsl(0 0% 0% / 0.1),
+  --card-shadow: 1px 1px 6px 0 hsl(0 0% 0% / 0.1),
+    1px 1px 2px 0 hsl(0 0% 0% / 0.06), -1px -1px 6px 0 hsl(0 0% 0% / 0.1),
     -1px -1px 2px 0 hsl(0 0% 0% / 0.06);
   --outline: none;
 
@@ -157,7 +158,7 @@ span {
 
 .projects__header {
   color: var(--text-color);
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   transition: var(--transition);
 }
 
@@ -168,7 +169,7 @@ span {
   color: var(--text-color);
   width: 1000px;
   padding: 1.5rem;
-  margin-bottom: 4rem;
+  margin-block: 2rem;
   border-radius: 16px;
   outline: var(--outline);
   box-shadow: var(--card-shadow);
@@ -198,17 +199,19 @@ span {
   transition: color var(--transition);
 }
 
-.projects__button__container {
+.projects__link__container {
   display: flex;
   justify-content: center;
   margin-top: 0.5rem;
 }
 
-.projects__button {
+.projects__link {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 0.83rem;
   font-weight: 600;
+  text-decoration: none;
   background-color: var(--text-color);
   color: var(--bg-color);
   padding: 4px 12px;
@@ -218,18 +221,18 @@ span {
   transition: var(--transition);
 }
 
-.projects__button:hover,
-.projects__button:focus {
+.projects__link:hover,
+.projects__link:focus {
   background-color: var(--button-bg-hover);
   cursor: pointer;
   transform: scale(1.06);
 }
 
-.projects__button:active {
+.projects__link:active {
   transform: scale(0.98);
 }
 
-.button__icon {
+.link__icon {
   margin-right: 0.5rem;
 }
 
@@ -249,7 +252,7 @@ span {
   display: flex;
   align-content: center;
   justify-content: center;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--text-color);
   margin-inline: 10px;
   transition: var(--transition);

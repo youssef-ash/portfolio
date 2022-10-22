@@ -1,6 +1,6 @@
 import triviaAppImg from './projectImages/trivia_app.png';
 import weatherAppImg from './projectImages/weather_journal_app.png';
-import portfolioImg from './projectImages/portfolio_light.png';
+import portfolioImg from './projectImages/portfolio.png';
 
 export const projectsData = [
   {
@@ -25,7 +25,7 @@ export const projectsData = [
     id: 3,
     title: 'Portfolio',
     image: portfolioImg,
-    description: '',
+    description: "You're already here! 😄, take a look around.",
     githubLink: 'https://github.com/youssef-ash/portfolio',
     liveLink: '',
   },

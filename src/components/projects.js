@@ -9,15 +9,25 @@ export default function Projects() {
         <div className="projects__info">
           <h2 className="projects__title">{project.title}</h2>
           <p className="projects__description">{project.description}</p>
-          <div className="projects__button__container">
-            <button className="projects__button">
-              <FaGithub className="button__icon" />
+          <div className="projects__link__container">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href={project.githubLink}
+              className="projects__link"
+            >
+              <FaGithub className="link__icon" />
               Code
-            </button>
-            <button className="projects__button">
-              <FaGlobe className="button__icon" />
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href={project.liveLink}
+              className="projects__link"
+            >
+              <FaGlobe className="link__icon" />
               Live Site
-            </button>
+            </a>
           </div>
         </div>
       </section>

@@ -9,7 +9,7 @@ export default function Projects() {
         <div className="projects__info">
           <h2 className="projects__title">{project.title}</h2>
           <p className="projects__description">{project.description}</p>
-          <div className="projects__link__container">
+          <div className="projects__links__container">
             <a
               target="_blank"
               rel="noreferrer"

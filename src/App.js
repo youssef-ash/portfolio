@@ -1,10 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import Layout from './components/layout';
 import Home from './components/home';
 import About from './components/about';
-import { useState, useEffect } from 'react';
 import Projects from './components/projects';
 import Contact from './components/contact';
-import Layout from './components/layout';
+import Error from './components/error';
 
 export default function App() {
   /* State Declarations */
@@ -58,6 +59,7 @@ export default function App() {
           <Route path="about" element={<About />} />
           <Route path="projects" element={<Projects />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<Error />} />
         </Route>
       </Routes>
     </BrowserRouter>

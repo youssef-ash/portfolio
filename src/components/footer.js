@@ -9,7 +9,7 @@ export default function Footer() {
           <FaEnvelope />
         </a>
         <a
-          target={'_blank'}
+          target="_blank"
           href="https://github.com/youssef-ash"
           rel="noreferrer"
           className="footer__link"
@@ -17,7 +17,7 @@ export default function Footer() {
           <FaGithub />
         </a>
         <a
-          target={'_blank'}
+          target="_blank"
           href="https://www.linkedin.com/in/youssef-ash/"
           rel="noreferrer"
           className="footer__link"

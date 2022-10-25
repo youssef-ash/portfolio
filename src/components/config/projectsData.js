@@ -1,6 +1,6 @@
-import triviaAppImg from './projectImages/trivia_app.png';
-import weatherAppImg from './projectImages/weather_journal_app.png';
-import portfolioImg from './projectImages/portfolio.png';
+import triviaAppImg from './projectsImages/trivia_app.png';
+import weatherAppImg from './projectsImages/weather_journal_app.png';
+import portfolioImg from './projectsImages/portfolio.png';
 
 export const projectsData = [
   {
@@ -17,13 +17,13 @@ export const projectsData = [
     title: 'Weather Journal App',
     image: weatherAppImg,
     description:
-      'A simple JavaScript application that utilizes the OpenWeather API to fetch the current weather in the USA zip code entered by the user.',
+      'A simple JavaScript application that utilizes the OpenWeather API to fetch the current weather in the USA zip code entered by the user and displays it on the page.',
     githubLink: 'https://github.com/youssef-ash/weather-journal',
     liveLink: '',
   },
   {
     id: 3,
-    title: 'Portfolio',
+    title: 'Portfolio Website',
     image: portfolioImg,
     description: "You're already here! 😄, take a look around.",
     githubLink: 'https://github.com/youssef-ash/portfolio',

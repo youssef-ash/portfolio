@@ -56,7 +56,7 @@ export default function App() {
           }
         >
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
+          <Route path="about" element={<About dark={dark} />} />
           <Route path="projects" element={<Projects />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<Error />} />

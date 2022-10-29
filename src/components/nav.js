@@ -1,7 +1,21 @@
+import { useEffect, useState } from 'react';
 import { MdDarkMode, MdLightMode } from 'react-icons/md';
 import { NavLink } from 'react-router-dom';
 
 export default function Nav({ darkMode, toggleDarkMode }) {
+  const [open, setOpen] = useState(false);
+
+  function openMenu() {
+    open ? setOpen(false) : setOpen(true);
+  }
+
+  useEffect(() => {
+    const navLinks = Array.from(document.getElementsByClassName('nav__link'));
+    navLinks.map((link) =>
+      link.addEventListener('click', () => setOpen(false))
+    );
+  }, []);
+
   return (
     <nav className="nav">
       <button
@@ -11,7 +25,7 @@ export default function Nav({ darkMode, toggleDarkMode }) {
       >
         {darkMode ? <MdLightMode /> : <MdDarkMode />}
       </button>
-      <div className="nav__list">
+      <div className={`nav__list ${open ? 'open' : ''}`}>
         <NavLink to="/" end className="nav__link">
           Home
         </NavLink>
@@ -24,6 +38,13 @@ export default function Nav({ darkMode, toggleDarkMode }) {
         <NavLink to="contact" className="nav__link">
           Contact
         </NavLink>
+      </div>
+      <div
+        className={`nav__menu ${open ? 'open' : ''}`}
+        onClick={openMenu}
+        tabIndex="0"
+      >
+        <div className="nav__hamburger"></div>
       </div>
     </nav>
   );

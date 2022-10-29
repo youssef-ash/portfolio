@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Home() {
   return (
     <main className="home">
@@ -7,6 +9,9 @@ export default function Home() {
           I'm <span>Youssef Ahmed</span> <br />
           An Aspiring Web Developer.
         </h2>
+        <Link to="/about" className="button home__link">
+          Know more
+        </Link>
       </div>
       <img
         className="home__image"

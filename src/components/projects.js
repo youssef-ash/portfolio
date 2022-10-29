@@ -20,7 +20,7 @@ export default function Projects() {
               Code
             </a>
             <a
-              target="_blank"
+              target={project.title === 'Portfolio Website' ? null : '_blank'}
               rel="noreferrer"
               href={project.liveLink}
               className="projects__link"

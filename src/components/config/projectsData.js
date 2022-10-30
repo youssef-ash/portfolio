@@ -10,7 +10,7 @@ export const projectsData = [
     description:
       'A single page React application that utilizes the Open Trivia Database API to generate trivia questions based on the options the user chooses.',
     githubLink: 'https://github.com/youssef-ash/trivia-app',
-    liveLink: '',
+    liveLink: 'https://trivia-app-ash.netlify.app',
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const projectsData = [
     description:
       'A simple JavaScript application that utilizes the OpenWeather API to fetch the current weather in the USA zip code entered by the user and displays it on the page.',
     githubLink: 'https://github.com/youssef-ash/weather-journal',
-    liveLink: '',
+    liveLink: 'https://weather-app-ash.netlify.app',
   },
   {
     id: 3,
@@ -27,6 +27,6 @@ export const projectsData = [
     image: portfolioImg,
     description: "You're already here! 😄, take a look around.",
     githubLink: 'https://github.com/youssef-ash/portfolio',
-    liveLink: '',
+    liveLink: 'https://youssefashwal.netlify.app',
   },
 ];

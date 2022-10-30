@@ -9,23 +9,23 @@ export default function Projects() {
         <div className="projects__info">
           <h2 className="projects__title">{project.title}</h2>
           <p className="projects__description">{project.description}</p>
-          <div className="projects__links__container">
+          <div className="projects__buttons__container">
             <a
               target="_blank"
               rel="noreferrer"
               href={project.githubLink}
-              className="projects__link"
+              className="projects__button"
             >
-              <FaGithub className="link__icon" />
+              <FaGithub className="button__icon" />
               Code
             </a>
             <a
               target={project.title === 'Portfolio Website' ? null : '_blank'}
               rel="noreferrer"
               href={project.liveLink}
-              className="projects__link"
+              className="projects__button"
             >
-              <FaGlobe className="link__icon" />
+              <FaGlobe className="button__icon" />
               Live Site
             </a>
           </div>

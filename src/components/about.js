@@ -7,6 +7,7 @@ import nodeLogoDark from './config/skillsLogos/nodejs_dark.svg';
 import nodeLogoLight from './config/skillsLogos/nodejs_light.svg';
 import gitLogo from './config/skillsLogos/git.svg';
 import postgresqlLogo from './config/skillsLogos/postgresql.svg';
+import { Link } from 'react-router-dom';
 
 export default function About({ dark }) {
   return (
@@ -22,7 +23,7 @@ export default function About({ dark }) {
           target="_blank"
           rel="noreferrer"
           href="https://egfwd.com/"
-          className="about__link"
+          className="link"
         >
           Future&nbsp;Work&nbsp;is&nbsp;Digital
         </a>{' '}
@@ -31,17 +32,16 @@ export default function About({ dark }) {
       </p>
       <p className="about__text">
         And since then I've been building personal projects and learning more
-        about web development, I decided to specialize in Front&#8209;End development
-        and so I plan on continuing my journey and to start working
-        professionally in the near future. Check out some of my work
-        over at the{' '}
-        <a href="/projects" className="about__link">
+        about web development, I decided to specialize in Front&#8209;End
+        development and so I plan on continuing my journey and to start working
+        professionally in the near future. Check out some of my work over at the{' '}
+        <Link to="/projects" className="link">
           Projects page
-        </a>
+        </Link>
         , or contact me through e&#8209;mail over at the{' '}
-        <a href="/contact" className="about__link">
+        <Link to="/contact" className="link">
           Contact page
-        </a>
+        </Link>
         .
       </p>
       <h2>

@@ -9,7 +9,7 @@ export default function Home() {
           I'm <span>Youssef Ahmed</span> <br />
           An Aspiring Web Developer.
         </h2>
-        <Link to="/about" className="button home__link">
+        <Link to="/about" className="button home__button">
           Know more
         </Link>
       </div>

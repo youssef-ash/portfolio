@@ -91,6 +91,33 @@ span {
   scale: 0.98;
 }
 
+.link {
+  display: inline-block;
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--blue-color);
+}
+
+.link::after {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 2px;
+  position: relative;
+  bottom: 0.25rem;
+  background-color: var(--blue-color);
+  transition: var(--transition);
+}
+
+.link:hover::after,
+.link:focus::after {
+  width: 100%;
+}
+
+.link:focus {
+  outline: none;
+}
+
 /* Nav */
 .nav {
   position: sticky;
@@ -135,7 +162,8 @@ span {
   gap: 1.5rem;
   background-color: var(--bg-color);
   margin: 0 8%;
-  transition: max-height var(--transition), padding var(--transition), background-color var(--transition), visibility var(--transition);
+  transition: max-height var(--transition), padding var(--transition),
+    background-color var(--transition), visibility var(--transition);
 }
 
 .nav__link {
@@ -284,7 +312,7 @@ span {
   transition: var(--transition);
 }
 
-.home__link {
+.home__button {
   padding: 4px 16px;
   margin: 10px 0 0 0;
   border-radius: 10px;
@@ -307,33 +335,6 @@ span {
   line-height: 1.6rem;
   max-width: 800px;
   margin-block: 1rem;
-}
-
-.about__link {
-  display: inline-block;
-  font-weight: 800;
-  text-decoration: none;
-  color: var(--blue-color);
-}
-
-.about__link::after {
-  content: '';
-  display: block;
-  width: 0px;
-  height: 2px;
-  position: relative;
-  bottom: 0.25rem;
-  background-color: var(--blue-color);
-  transition: var(--transition);
-}
-
-.about__link:hover::after,
-.about__link:focus::after {
-  width: 100%;
-}
-
-.about__link:focus {
-  outline: none;
 }
 
 .about__skillset {
@@ -415,13 +416,13 @@ span {
   transition: color var(--transition);
 }
 
-.projects__links__container {
+.projects__buttons__container {
   display: flex;
   justify-content: center;
   margin-top: 0.5rem;
 }
 
-.projects__link {
+.projects__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -438,24 +439,30 @@ span {
   transition: var(--transition);
 }
 
-.projects__link:hover,
-.projects__link:focus {
+.projects__button:hover,
+.projects__button:focus {
   background-color: var(--button-bg-hover);
   outline: none;
   cursor: pointer;
   scale: 1.06;
 }
 
-.projects__link:active {
+.projects__button:active {
   scale: 0.98;
 }
 
-.link__icon {
+.button__icon {
   margin-right: 0.5rem;
 }
 
 /* Contact */
-.contact__link {
+.contact {
+  gap: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.contact__button {
   padding: 4px 16px;
   border-radius: 8px;
 }
@@ -551,7 +558,7 @@ span {
     box-shadow: var(--shadow);
     transform: translateZ(-1px);
   }
-  
+
   .nav__list.open {
     visibility: visible;
     max-height: 250px;

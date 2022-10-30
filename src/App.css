@@ -536,6 +536,10 @@ span {
     width: 400px;
   }
 
+  .projects__card:hover {
+    scale: 1;
+  }
+
   .projects__image {
     width: 352px;
   }

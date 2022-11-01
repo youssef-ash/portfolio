@@ -1,3 +1,4 @@
+import './projects.css';
 import { projectsData } from './config/projectsData';
 import { FaGithub, FaGlobe } from 'react-icons/fa';
 

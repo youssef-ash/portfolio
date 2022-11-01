@@ -1,12 +1,13 @@
-import htmlLogo from './config/skillsLogos/html.svg';
-import cssLogo from './config/skillsLogos/css.svg';
-import javascriptLogo from './config/skillsLogos/javascript.svg';
-import typescriptLogo from './config/skillsLogos/typescript.svg';
-import reactLogo from './config/skillsLogos/react.svg';
-import nodeLogoDark from './config/skillsLogos/nodejs_dark.svg';
-import nodeLogoLight from './config/skillsLogos/nodejs_light.svg';
-import gitLogo from './config/skillsLogos/git.svg';
-import postgresqlLogo from './config/skillsLogos/postgresql.svg';
+import './about.css';
+import htmlLogo from './skillsLogos/html.svg';
+import cssLogo from './skillsLogos/css.svg';
+import javascriptLogo from './skillsLogos/javascript.svg';
+import typescriptLogo from './skillsLogos/typescript.svg';
+import reactLogo from './skillsLogos/react.svg';
+import nodeLogoDark from './skillsLogos/nodejs_dark.svg';
+import nodeLogoLight from './skillsLogos/nodejs_light.svg';
+import gitLogo from './skillsLogos/git.svg';
+import postgresqlLogo from './skillsLogos/postgresql.svg';
 import { Link } from 'react-router-dom';
 
 export default function About({ dark }) {

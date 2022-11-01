@@ -1,14 +1,18 @@
+import './nav.css';
 import { useEffect, useState } from 'react';
 import { MdDarkMode, MdLightMode } from 'react-icons/md';
 import { NavLink } from 'react-router-dom';
 
 export default function Nav({ darkMode, toggleDarkMode }) {
+  /* State Declarations */
   const [open, setOpen] = useState(false);
 
+  /* Main Functions */
   function openMenu() {
     open ? setOpen(false) : setOpen(true);
   }
 
+  /* Hooks and Events */
   useEffect(() => {
     const navLinks = Array.from(document.getElementsByClassName('nav__link'));
     navLinks.map((link) =>

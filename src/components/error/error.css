@@ -1,0 +1,21 @@
+/* Error */
+
+.error {
+  font-family: 'Noto Sans Mono', monospace;
+}
+
+.error__number {
+  font-size: 10rem;
+  letter-spacing: 0.2rem;
+  transform: scaleY(1.1);
+}
+
+.error__text {
+  font-size: 2rem;
+}
+
+.error__link {
+  padding: 10px 18px;
+  margin-block: 2rem 2.5rem;
+  border-radius: 10px;
+}

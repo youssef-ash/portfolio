@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import './error.css';
+import { Link } from 'react-router-dom';
 
 export default function Error() {
   return (
@@ -7,7 +8,9 @@ export default function Error() {
         <span>404</span>
       </h1>
       <h2 className="error__text">Page Not Found</h2>
-      <Link to='/' className="button error__link">Go Home</Link>
+      <Link to="/" className="button error__link">
+        Go Home
+      </Link>
     </main>
   );
 }

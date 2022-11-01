@@ -5,16 +5,20 @@
   gap: 3rem;
 }
 
+.projects__header {
+  text-align: center;
+}
+
 .projects__card {
   display: flex;
   align-items: center;
   gap: 0.8rem;
   width: 1000px;
   padding: 1.5rem;
-  border-radius: 16px;
+  border-radius: 26px;
   outline: var(--outline);
   box-shadow: var(--card-shadow);
-  transition: var(--transition);
+  transition: scale var(--transition-time);
 }
 
 .projects__card:hover {
@@ -22,26 +26,26 @@
 }
 
 .projects__image {
-  width: 607px;
+  width: 602px;
   border-radius: 16px;
-  transition: var(--transition);
 }
 
 .projects__info {
-  width: 350px;
+  text-align: center;
+  width: 100%;
   padding-inline: 1rem;
-  transition: var(--transition);
 }
 
 .projects__title {
   color: var(--text-color);
-  transition: color var(--transition);
+  transition: color var(--transition-time);
 }
 
 .projects__description {
+  font-size: 1.1rem;
   font-weight: 600;
   color: var(--text-color);
-  transition: color var(--transition);
+  transition: color var(--transition-time);
 }
 
 .projects__buttons__container {
@@ -53,23 +57,17 @@
 .projects__button {
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 0.83rem;
-  font-weight: 600;
-  text-decoration: none;
-  background-color: var(--text-color);
-  color: var(--bg-color);
-  padding: 4px 12px;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  padding: 5px 14px;
   border: none;
   border-radius: 10px;
   margin: 10px 15px;
-  cursor: pointer;
-  transition: var(--transition);
 }
 
 .projects__button:hover,
 .projects__button:focus {
-  background-color: var(--button-bg-hover);
+  background-color: var(--blue-hover-color);
   outline: none;
   cursor: pointer;
   scale: 1.06;
@@ -79,17 +77,16 @@
   scale: 0.98;
 }
 
-.button__icon {
-  margin-right: 0.5rem;
-}
-
 /* Media Queries */
 
 @media only screen and (max-width: 1085px) {
   .projects__card {
     flex-direction: column;
-    text-align: center;
-    width: 655px;
+    width: 650px;
+  }
+
+  .projects__image {
+    width: 100%;
   }
 
   .projects__info {
@@ -100,14 +97,10 @@
 
 @media only screen and (max-width: 720px) {
   .projects__card {
-    width: 400px;
+    width: 100%;
   }
 
   .projects__card:hover {
     scale: 1;
-  }
-
-  .projects__image {
-    width: 352px;
   }
 }

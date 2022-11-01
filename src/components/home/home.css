@@ -17,13 +17,13 @@
   font-weight: 600;
   color: var(--text-color);
   margin-bottom: 6px;
-  transition: var(--transition);
+  transition: var(--transition-time);
 }
 
 .home__introduction {
   font-size: 2.06em;
   color: var(--text-color);
-  transition: var(--transition);
+  transition: var(--transition-time);
 }
 
 .home__button {
@@ -35,7 +35,7 @@
 .home__image {
   width: 470px;
   margin: 0 0 0 40px;
-  transition: var(--transition);
+  transition: var(--transition-time);
 }
 
 /* Media Queries */
@@ -51,7 +51,7 @@
   }
 
   .home__image {
-    width: 380px;
+    width: min(380px, 100%);
   }
 }
 

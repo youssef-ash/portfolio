@@ -15,18 +15,18 @@ export default function Projects() {
               target="_blank"
               rel="noreferrer"
               href={project.githubLink}
-              className="projects__button"
+              className="button projects__button"
             >
-              <FaGithub className="button__icon" />
+              <FaGithub />
               Code
             </a>
             <a
               target={project.title === 'Portfolio Website' ? null : '_blank'}
               rel="noreferrer"
               href={project.liveLink}
-              className="projects__button"
+              className="button projects__button"
             >
-              <FaGlobe className="button__icon" />
+              <FaGlobe />
               Live Site
             </a>
           </div>

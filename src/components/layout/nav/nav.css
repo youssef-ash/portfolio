@@ -14,7 +14,7 @@
   outline: var(--outline);
   transform-style: preserve-3d;
   z-index: 1;
-  transition: var(--transition);
+  transition: var(--transition-time);
 }
 
 .nav__dark-mode {
@@ -30,7 +30,7 @@
   margin: 0 8%;
   border: none;
   cursor: pointer;
-  transition: var(--transition);
+  transition: var(--transition-time);
 }
 
 .nav__dark-mode:hover,
@@ -45,8 +45,8 @@
   gap: 1.5rem;
   background-color: var(--bg-color);
   margin: 0 8%;
-  transition: max-height var(--transition), padding var(--transition),
-    background-color var(--transition), visibility var(--transition);
+  transition: max-height, padding, background-color, visibility;
+  transition-duration: var(--transition-time);
 }
 
 .nav__link {
@@ -54,7 +54,7 @@
   text-decoration: none;
   color: var(--text-color);
   cursor: pointer;
-  transition: color var(--transition);
+  transition: color var(--transition-time);
 }
 
 .nav__link:hover,
@@ -104,7 +104,7 @@
   height: 3px;
   margin-block: 12px;
   border-radius: 5px;
-  transition: var(--transition);
+  transition: var(--transition-time);
 }
 
 .nav__hamburger::before,
@@ -115,7 +115,7 @@
   width: 24px;
   height: 3px;
   border-radius: 5px;
-  transition: var(--transition);
+  transition: var(--transition-time);
 }
 
 .nav__hamburger::before {

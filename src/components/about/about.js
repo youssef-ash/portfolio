@@ -8,6 +8,8 @@ import nodeLogoDark from './skillsLogos/nodejs_dark.svg';
 import nodeLogoLight from './skillsLogos/nodejs_light.svg';
 import gitLogo from './skillsLogos/git.svg';
 import postgresqlLogo from './skillsLogos/postgresql.svg';
+import reduxLogo from './skillsLogos/redux.svg';
+import nextLogo from './skillsLogos/nextjs.svg';
 import { Link } from 'react-router-dom';
 
 export default function About({ dark }) {
@@ -18,8 +20,7 @@ export default function About({ dark }) {
       </h2>
       <p className="about__text">
         Hello! My name is Youssef, I'm from Egypt and I enjoy creating things on
-        the internet. I began my self&#8209;learning journey in 2021 when a
-        friend recommended me a program called{' '}
+        the internet. I began my self&#8209;learning journey in 2021 when I came across a program called{' '}
         <a
           target="_blank"
           rel="noreferrer"
@@ -35,7 +36,7 @@ export default function About({ dark }) {
         And since then I've been building personal projects and learning more
         about web development, I decided to specialize in Front&#8209;End
         development and so I plan on continuing my journey and to start working
-        professionally in the near future. Check out some of my work over at the{' '}
+        professionally as a Front&#8209;End developer. Check out some of my work over at the{' '}
         <Link to="/projects" className="link">
           Projects page
         </Link>
@@ -63,6 +64,12 @@ export default function About({ dark }) {
         </div>
         <div className="about__skill">
           <img src={reactLogo} alt="React"></img>React
+        </div>
+        <div className="about__skill">
+          <img src={nextLogo} alt="Next.js"></img>Next.js
+        </div>
+        <div className="about__skill">
+          <img src={reduxLogo} alt="Redux"></img>Redux
         </div>
         <div className="about__skill">
           <img src={dark ? nodeLogoLight : nodeLogoDark} alt="Node.js"></img>

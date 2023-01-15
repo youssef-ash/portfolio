@@ -4,12 +4,14 @@ import cssLogo from './skillsLogos/css.svg';
 import javascriptLogo from './skillsLogos/javascript.svg';
 import typescriptLogo from './skillsLogos/typescript.svg';
 import reactLogo from './skillsLogos/react.svg';
-import nodeLogoDark from './skillsLogos/nodejs_dark.svg';
+import nextLogoLight from './skillsLogos/nextjs_light.svg'
+import nextLogoDark from './skillsLogos/nextjs_dark.svg';
+import sassLogo from './skillsLogos/sass.svg'
+import reduxLogo from './skillsLogos/redux.svg';
 import nodeLogoLight from './skillsLogos/nodejs_light.svg';
+import nodeLogoDark from './skillsLogos/nodejs_dark.svg';
 import gitLogo from './skillsLogos/git.svg';
 import postgresqlLogo from './skillsLogos/postgresql.svg';
-import reduxLogo from './skillsLogos/redux.svg';
-import nextLogo from './skillsLogos/nextjs.svg';
 import { Link } from 'react-router-dom';
 
 export default function About({ dark }) {
@@ -66,7 +68,10 @@ export default function About({ dark }) {
           <img src={reactLogo} alt="React"></img>React
         </div>
         <div className="about__skill">
-          <img src={nextLogo} alt="Next.js"></img>Next.js
+          <img src={dark ? nextLogoLight : nextLogoDark} alt="Next.js"></img>Next.js
+        </div>
+        <div className="about__skill">
+          <img src={sassLogo} alt="Sass"></img>SASS
         </div>
         <div className="about__skill">
           <img src={reduxLogo} alt="Redux"></img>Redux

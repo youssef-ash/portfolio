@@ -57,7 +57,7 @@
 .projects__button {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.3rem;
   font-size: 0.85rem;
   padding: 5px 14px;
   border: none;
@@ -75,6 +75,11 @@
 
 .projects__button:active {
   scale: 0.98;
+}
+
+.disabled {
+  pointer-events: none;
+  filter: brightness(0.6);
 }
 
 /* Media Queries */

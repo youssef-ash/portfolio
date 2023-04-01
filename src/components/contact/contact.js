@@ -1,4 +1,4 @@
-import './contact.css';
+import "./contact.css";
 
 export default function Contact() {
   return (
@@ -7,8 +7,8 @@ export default function Contact() {
         Contact <span>Me</span>
       </h1>
       <p>
-        I'm currently looking for opportunities. <br />
-        If you're interested connect with me on{' '}
+        I'm currently open for opportunities. <br />
+        If you're interested connect with me on{" "}
         <a
           target="_blank"
           href="https://www.linkedin.com/in/youssef-ash/"
@@ -16,7 +16,7 @@ export default function Contact() {
           className="link"
         >
           LinkedIn
-        </a>{' '}
+        </a>{" "}
         or send me an e&#8209;mail using the button below.
       </p>
       <a

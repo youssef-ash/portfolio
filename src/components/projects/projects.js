@@ -4,7 +4,8 @@ import { FaGithub, FaGlobe } from "react-icons/fa";
 
 export default function Projects() {
   const projectCards = projectsData.map((project) => {
-    let privateSrc = project.githubLink ? false : true;
+    const privateSrc = project.githubLink ? false : true;
+    const noLiveSite = project.title === "Portfolio Website";
 
     return (
       <section className="projects__card" key={project.id}>
@@ -20,15 +21,19 @@ export default function Projects() {
               className={`button projects__button ${
                 privateSrc ? "disabled" : ""
               }`}
+              tabIndex={privateSrc ? -1 : 0}
             >
               <FaGithub />
               Code
             </a>
             <a
-              target={project.title === "Portfolio Website" ? null : "_blank"}
+              target="_blank"
               rel="noreferrer"
               href={project.liveLink}
-              className="button projects__button"
+              className={`button projects__button ${
+                noLiveSite ? "disabled" : ""
+              }`}
+              tabIndex={noLiveSite ? -1 : 0}
             >
               <FaGlobe />
               Live Site

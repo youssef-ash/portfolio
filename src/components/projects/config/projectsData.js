@@ -15,21 +15,21 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: "Weather Journal App",
-    image: weatherAppImg,
-    description:
-      "A simple JavaScript application that utilizes the OpenWeather API to fetch the current weather in the USA zip code entered by the user and displays it on the page.",
-    githubLink: "https://github.com/youssef-ash/weather-journal",
-    liveLink: "https://weather-journal-ash.onrender.com",
-  },
-  {
-    id: 3,
     title: "Online Vet Clinic",
     image: VetClinicImg,
     description:
       "A multi-lingual website for an online veterinary clinic built using NextJS, I built the website following SEO optimization guidelines, The styling for the website was done using CSS",
     githubLink: "",
     liveLink: "https://online-vet.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "Weather Journal App",
+    image: weatherAppImg,
+    description:
+      "A simple JavaScript application that utilizes the OpenWeather API to fetch the current weather in the USA zip code entered by the user and displays it on the page.",
+    githubLink: "https://github.com/youssef-ash/weather-journal",
+    liveLink: "https://weather-journal-ash.onrender.com",
   },
   {
     id: 4,

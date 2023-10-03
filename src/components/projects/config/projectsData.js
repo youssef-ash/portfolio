@@ -6,12 +6,11 @@ import portfolioImg from "./projectsImages/portfolio.png";
 export const projectsData = [
   {
     id: 1,
-    title: "Trivia App",
-    image: triviaAppImg,
-    description:
-      "A single page React application that utilizes the Open Trivia Database API to generate trivia questions based on the options the user chooses.",
-    githubLink: "https://github.com/youssef-ash/trivia-app",
-    liveLink: "https://trivia-quiz-ash.netlify.app",
+    title: "Nile Survey Form",
+    image: null,
+    description: "",
+    githubLink: "",
+    liveLink: "",
   },
   {
     id: 2,
@@ -24,6 +23,15 @@ export const projectsData = [
   },
   {
     id: 3,
+    title: "Trivia App",
+    image: triviaAppImg,
+    description:
+      "A single page React application that utilizes the Open Trivia Database API to generate trivia questions based on the options the user chooses.",
+    githubLink: "https://github.com/youssef-ash/trivia-app",
+    liveLink: "https://trivia-quiz-ash.netlify.app",
+  },
+  {
+    id: 4,
     title: "Weather Journal App",
     image: weatherAppImg,
     description:
@@ -32,7 +40,7 @@ export const projectsData = [
     liveLink: "https://weather-journal-ash.onrender.com",
   },
   {
-    id: 4,
+    id: 5,
     title: "Portfolio Website",
     image: portfolioImg,
     description: "You're already here! 😄, take a look around.",

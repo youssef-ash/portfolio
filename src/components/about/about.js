@@ -33,14 +33,14 @@ export default function About({ dark }) {
           Future&nbsp;Work&nbsp;is&nbsp;Digital
         </a>{" "}
         program where I learned the basics of web development, and after that
-        I've learned more technologies like React, Next.js and Git.
+        I've learned more technologies like React, TypeScript, Next.js and Git.
       </p>
       <p className="about__text">
-        And since then I've been building personal projects and learning more
-        about web development, I decided to specialize in Front&#8209;End
-        development and so I plan on continuing my journey and to start working
-        professionally as a Front&#8209;End developer. Check out some of my work
-        over at the{" "}
+        And since then I've been freelancing and building personal projects and
+        learning more about web development, I decided to specialize in
+        Front&#8209;End development and so I plan on continuing my journey and
+        to start working full&#8209;time as a Front&#8209;End developer. Check
+        out some of my work over at the{" "}
         <Link to="/projects" className="link">
           Projects page
         </Link>

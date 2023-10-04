@@ -2,13 +2,15 @@ import triviaAppImg from "./projectsImages/trivia_app.png";
 import weatherAppImg from "./projectsImages/weather_journal_app.png";
 import VetClinicImg from "./projectsImages/vet_clinic.png";
 import portfolioImg from "./projectsImages/portfolio.png";
+import nileSurveyImg from "./projectsImages/nile_survey.png";
 
 export const projectsData = [
   {
     id: 1,
     title: "Nile Survey Form",
-    image: null,
-    description: "",
+    image: nileSurveyImg,
+    description:
+      "A React PWA for Nile Developments, The app collects visiting clients' data and sends it to a google sheet, the Sales team uses the collected data in their meetings with the clients",
     githubLink: "",
     liveLink: "",
   },
